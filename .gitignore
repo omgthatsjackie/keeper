@@ -1,0 +1,14 @@
+# IDE
+.idea/
+
+# Python
+__pycache__/
+
+# App cache
+.cache
+
+# For personal purpose
+todo.md
+
+# Environments
+venv/
