@@ -1,12 +1,15 @@
-from variables import variables
+from dotenv import load_dotenv
+from os import getenv
 from models.commands import Commands
 from models.database import Database
 
+load_dotenv()
+
 db = Database(
-    user=variables['DB_USERNAME'],
-    password=variables['DB_PASSWORD'],
-    host=variables['DB_HOST'],
-    database=variables['DB_NAME']
+    user=getenv('DB_USERNAME'),
+    password=getenv('DB_PASSWORD'),
+    host=getenv('DB_HOST'),
+    database=getenv('DB_NAME')
 )
 
 commands = Commands(db)

@@ -1,6 +1,6 @@
 from sys import exit
-from utils.decorators import logged
 from getpass import getpass
+from utils.decorators import logged
 
 class Commands:
     def __init__(self, database):

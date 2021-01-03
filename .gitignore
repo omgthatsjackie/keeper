@@ -12,3 +12,6 @@ todo.md
 
 # Environments
 venv/
+
+# Env variables
+.env
